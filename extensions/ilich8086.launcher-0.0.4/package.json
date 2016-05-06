@@ -1,0 +1,154 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "a4a77c97-f789-42e1-a649-65ac1bf244f3",
+		"publisherId": "7b78a0c5-0996-445b-ad5a-dc5d0024c07e",
+		"publisherDisplayName": "Ilya Verbitskiy",
+		"installCount": 3329,
+		"versions": [
+			{
+				"version": "0.0.4",
+				"date": "2015-12-17T17:48:11.607Z",
+				"downloadUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.4/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.3",
+				"date": "2015-12-07T15:13:11.323Z",
+				"downloadUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.3/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.2",
+				"date": "2015-12-02T15:35:50.847Z",
+				"downloadUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.2/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.1",
+				"date": "2015-11-29T00:39:05.017Z",
+				"downloadUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://ilich8086.gallery.vsassets.io/_apis/public/gallery/publisher/ilich8086/extension/launcher/0.0.1/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "launcher",
+	"displayName": "Launcher",
+	"description": "An easy way to launch your terminal, tools, scripts and batches from Visual Studio Code.",
+	"version": "0.0.4",
+	"publisher": "ilich8086",
+	"homepage": "https://github.com/ilich/vscode-launcher",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ilich/vscode-launcher.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ilich/vscode-launcher/issues"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:launcher.terminal",
+		"onCommand:launcher.terminalInWorkspace",
+		"onCommand:launcher"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "launcher.terminal",
+				"title": "Open a Terminal"
+			},
+			{
+				"command": "launcher.terminalInWorkspace",
+				"title": "Open a Terminal (Workspace Folder)"
+			},
+			{
+				"command": "launcher",
+				"title": "Launcher"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "launcher.terminal",
+				"key": "ctrl+shift+t"
+			},
+			{
+				"command": "launcher.terminalInWorkspace",
+				"key": "ctrl+alt+shift+t"
+			},
+			{
+				"command": "launcher",
+				"key": "shift+f2"
+			}
+		],
+		"configuration": {
+			"title": "Launcher Configuration",
+			"type": "object",
+			"properties": {
+				"launcher.terminal": {
+					"type": "object",
+					"properties": {
+						"executable": {
+							"type": "string",
+							"description": "Command executable"
+						},
+						"parameters": {
+							"type": "string",
+							"description": "Command executable's parameters (use %item% or %workspace% to reference VS Code folders)"
+						}
+					},
+					"required": [
+						"executable"
+					],
+					"description": "Command to launch terminal. Empty value means using default system terminal."
+				},
+				"launcher.commands": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"description": {
+								"type": "string",
+								"description": "Command description (shown in the Script Manager)"
+							},
+							"executable": {
+								"type": "string",
+								"description": "Command executable"
+							},
+							"parameters": {
+								"type": "string",
+								"description": "Command executable's parameters (use %item%, %item_path% or %workspace% to reference VS Code folders)"
+							},
+							"startIn": {
+								"type": "string",
+								"description": "Start executable in the folder (use %item%, %item_path% or %workspace% to reference VS Code folders)"
+							},
+							"output": {
+								"type": "boolean",
+								"description": "Send comman's stdout and stderr to output channel if the value is true"
+							}
+						}
+					},
+					"required": [
+						"description",
+						"executable"
+					],
+					"description": "User commands (shared between workspaces)"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	}
+}

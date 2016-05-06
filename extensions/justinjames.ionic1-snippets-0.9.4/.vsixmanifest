@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="ionic1-snippets" Version="0.9.4" Publisher="justinjames"/>
+    <DisplayName>ionic1-snippets</DisplayName>
+    <Description xml:space="preserve">ionic1 html, icon, and javascript snippets</Description>
+    <Tags>vscode</Tags>
+    <Categories>Snippets</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Properties>
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/digitaldrummerj/vscode-ionic1-snippets.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/digitaldrummerj/vscode-ionic1-snippets.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Repository" Value="https://github.com/digitaldrummerj/vscode-ionic1-snippets.git" />
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/digitaldrummerj/vscode-ionic1-snippets/issues" />
+      
+      
+      
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

@@ -1,0 +1,53 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "33a52820-2872-49db-9f46-1202fde4ee0f",
+		"downloadUrl": "https://justinjames.gallery.vsassets.io/_apis/public/gallery/publisher/justinjames/extension/ionic1-snippets/0.9.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "64a34d0a-05c6-4046-8683-0c97815f7bd6",
+		"publisherDisplayName": "justinjames",
+		"installCount": 243,
+		"date": "2016-03-01T22:03:17.6Z"
+	},
+	"name": "ionic1-snippets",
+	"displayName": "ionic1-snippets",
+	"description": "ionic1 html, icon, and javascript snippets",
+	"version": "0.9.4",
+	"publisher": "justinjames",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/digitaldrummerj/vscode-ionic1-snippets.git"
+	},
+	"bugs": {
+		"url": "https://github.com/digitaldrummerj/vscode-ionic1-snippets/issues"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/icons-name.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/icons-html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/ng-ionic.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "9001c3f8-94bf-484d-92fc-07f2fd03ff5e",
+		"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+		"publisherDisplayName": "Microsoft",
+		"installCount": 4346,
+		"versions": [
+			{
+				"version": "0.1.0",
+				"date": "2015-11-18T02:24:00.743Z",
+				"downloadUrl": "https://ms-vscode.gallery.vsassets.io/_apis/public/gallery/publisher/ms-vscode/extension/Theme-MarkdownKit/0.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://ms-vscode.gallery.vsassets.io/_apis/public/gallery/publisher/ms-vscode/extension/Theme-MarkdownKit/0.1.0/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.1",
+				"date": "2015-11-15T00:39:16.54Z",
+				"downloadUrl": "https://ms-vscode.gallery.vsassets.io/_apis/public/gallery/publisher/ms-vscode/extension/Theme-MarkdownKit/0.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://ms-vscode.gallery.vsassets.io/_apis/public/gallery/publisher/ms-vscode/extension/Theme-MarkdownKit/0.0.1/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "Theme-MarkdownKit",
+	"displayName": "Markdown Theme Kit",
+	"description": "Theme Kit for VS Code optimized for Markdown. Based on the TextMate themes.",
+	"version": "0.1.0",
+	"publisher": "ms-vscode",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.svg",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Markdown Editor",
+				"uiTheme": "vs",
+				"path": "./themes/MarkdownEditor.tmTheme"
+			},
+			{
+				"label": "Markdown Editor Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/MarkdownEditor-Dark.tmTheme"
+			},
+			{
+				"label": "Markdown Editor Focus",
+				"uiTheme": "vs",
+				"path": "./themes/MarkdownEditor-Focus.tmTheme"
+			},
+			{
+				"label": "Markdown Editor Yellow",
+				"uiTheme": "vs",
+				"path": "./themes/MarkdownEditor-Yellow.tmTheme"
+			}
+		]
+	}
+}

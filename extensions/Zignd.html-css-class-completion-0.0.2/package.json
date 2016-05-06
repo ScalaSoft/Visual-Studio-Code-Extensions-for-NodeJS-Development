@@ -1,0 +1,58 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "7b71fc1b-190d-4f7d-95d1-93e422649b0a",
+		"publisherId": "20bf23ac-66a2-4404-9047-4b8215047b8b",
+		"publisherDisplayName": "Zignd",
+		"installCount": 8150,
+		"versions": [
+			{
+				"version": "0.0.2",
+				"date": "2016-02-13T23:56:26.327Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode",
+					"X-Market-User-Id": "74811bdbf7d6d7ab3bda7966ff2c3be881c392c0a75769fba1998f3617e236b8"
+				},
+				"downloadUrl": "https://zignd.gallery.vsassets.io/_apis/public/gallery/publisher/Zignd/extension/html-css-class-completion/0.0.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://zignd.gallery.vsassets.io/_apis/public/gallery/publisher/Zignd/extension/html-css-class-completion/0.0.2/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.1",
+				"date": "2016-01-31T05:43:10.897Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode",
+					"X-Market-User-Id": "74811bdbf7d6d7ab3bda7966ff2c3be881c392c0a75769fba1998f3617e236b8"
+				},
+				"downloadUrl": "https://zignd.gallery.vsassets.io/_apis/public/gallery/publisher/Zignd/extension/html-css-class-completion/0.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://zignd.gallery.vsassets.io/_apis/public/gallery/publisher/Zignd/extension/html-css-class-completion/0.0.1/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "html-css-class-completion",
+	"displayName": "HTML CSS Class Completion",
+	"description": "Provides CSS class completion for the HTML class attribute.",
+	"version": "0.0.2",
+	"publisher": "Zignd",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:html"
+	],
+	"icon": "images/icon.png",
+	"main": "./extension",
+	"repository": {
+		"url": "https://github.com/Zignd/HTML-CSS-Class-Completion"
+	},
+	"dependencies": {
+		"css": "2.2.1",
+		"cheerio": "0.19.0"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}

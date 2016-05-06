@@ -1,0 +1,47 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "949eb1e5-b41c-413f-99da-6b57cdaed1b4",
+		"downloadUrl": "https://kasik96.gallery.vsassets.io/_apis/public/gallery/publisher/Kasik96/extension/format-indent/1.2.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "d0da30bb-6c9f-4482-8b47-080dc94e6008",
+		"publisherDisplayName": "Martin Kase",
+		"installCount": 6820,
+		"date": "2016-01-31T18:08:31.037Z"
+	},
+	"name": "format-indent",
+	"displayName": "PHP Code Format",
+	"description": "Code format for PHP Language",
+	"version": "1.2.3",
+	"publisher": "Kasik96",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"icon": "media/icon.png",
+	"galleryBanner": {
+		"color": "#0000FF",
+		"theme": "dark"
+	},
+	"bugs": {
+		"url": "https://github.com/kasik96/VSCode-PHP-Format/issues",
+		"email": "kasemartin@icloud.com"
+	},
+	"homepage": "https://github.com/kasik96/VSCode-PHP-Format",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kasik96/VSCode-PHP-Format"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:php"
+	],
+	"main": "./extension",
+	"dependencies": {
+		"js-beautify": "^1.5.10",
+		"beautifier": "0.1.7"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}

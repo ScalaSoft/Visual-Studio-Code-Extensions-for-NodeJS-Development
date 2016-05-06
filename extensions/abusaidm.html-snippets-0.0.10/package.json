@@ -1,0 +1,35 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "be992f3f-9f22-4b66-a1d2-ecad04c28a28",
+		"downloadUrl": "https://abusaidm.gallery.vsassets.io/_apis/public/gallery/publisher/abusaidm/extension/html-snippets/0.0.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "7fe357ee-5480-4a7d-a4e9-009d9438c2a3",
+		"publisherDisplayName": "Mohamed Abusaid",
+		"installCount": 5825,
+		"date": "2016-01-16T14:17:12.737Z"
+	},
+	"name": "html-snippets",
+	"displayName": "HTML Snippets",
+	"description": "Full HTML tags including HTML5 Snippets",
+	"version": "0.0.10",
+	"publisher": "abusaidm",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"galleryBanner": {
+		"color": "#1E81C1",
+		"theme": "light"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}

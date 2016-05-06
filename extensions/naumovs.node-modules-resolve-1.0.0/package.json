@@ -1,0 +1,93 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "33725128-6e25-4fd3-b913-65593c2f0f2f",
+		"publisherId": "e9a76d04-24d4-44eb-a202-964f71acf59e",
+		"publisherDisplayName": "Sergii Naumov",
+		"installCount": 1539,
+		"versions": [
+			{
+				"version": "1.0.0",
+				"date": "2016-02-01T12:26:14.69Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode",
+					"X-Market-User-Id": "74811bdbf7d6d7ab3bda7966ff2c3be881c392c0a75769fba1998f3617e236b8"
+				},
+				"downloadUrl": "https://naumovs.gallery.vsassets.io/_apis/public/gallery/publisher/naumovs/extension/node-modules-resolve/1.0.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://naumovs.gallery.vsassets.io/_apis/public/gallery/publisher/naumovs/extension/node-modules-resolve/1.0.0/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.1",
+				"date": "2016-01-30T02:25:15.27Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode",
+					"X-Market-User-Id": "74811bdbf7d6d7ab3bda7966ff2c3be881c392c0a75769fba1998f3617e236b8"
+				},
+				"downloadUrl": "https://naumovs.gallery.vsassets.io/_apis/public/gallery/publisher/naumovs/extension/node-modules-resolve/0.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://naumovs.gallery.vsassets.io/_apis/public/gallery/publisher/naumovs/extension/node-modules-resolve/0.0.1/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "node-modules-resolve",
+	"displayName": "Node modules resolve",
+	"description": "Provides definitions for commonjs requires in your code for quick navigation.",
+	"version": "1.0.0",
+	"publisher": "naumovs",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:javascript"
+	],
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/webpack/bin/webpack.js",
+		"compile": "node ./node_modules/webpack/bin/webpack.js -w"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/naumovs/vscode-ext-node-module-resolve/issues"
+	},
+	"homepage": "https://github.com/naumovs/vscode-ext-node-module-resolve",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/naumovs/vscode-ext-node-module-resolve.git"
+	},
+	"main": "./dist/extension",
+	"icon": "images/preview.png",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Node modules resolve",
+			"properties": {
+				"javascript.commonjs.resolve.extensions": {
+					"type": "array",
+					"default": [
+						".js"
+					],
+					"description": "Array of file extensions to search in order."
+				},
+				"javascript.commonjs.resolve.package": {
+					"type": "string",
+					"default": "package.json",
+					"description": "package.json Data applicable to the module being loaded"
+				},
+				"javascript.commonjs.resolve.moduleDirectory": {
+					"type": "array",
+					"default": [
+						"node_modules"
+					],
+					"description": "Directories in which to recursively look for modules."
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"json-loader": "^0.5.4",
+		"resolve": "^1.1.7",
+		"vscode": "0.10.x",
+		"webpack": "^1.12.12"
+	}
+}

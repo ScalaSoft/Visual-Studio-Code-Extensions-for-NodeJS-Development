@@ -1,0 +1,50 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "b7495032-d1d3-4be2-a2a1-695559fcd3d6",
+		"publisherId": "261c2fe7-dbea-4dbf-bff3-6da4a886e8d2",
+		"publisherDisplayName": "David Bankier",
+		"installCount": 5061,
+		"versions": [
+			{
+				"version": "0.1.0",
+				"date": "2015-12-02T01:36:23.443Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode",
+					"X-Market-User-Id": "74811bdbf7d6d7ab3bda7966ff2c3be881c392c0a75769fba1998f3617e236b8"
+				},
+				"downloadUrl": "https://dbankier.gallery.vsassets.io/_apis/public/gallery/publisher/dbankier/extension/vscode-instant-markdown/0.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://dbankier.gallery.vsassets.io/_apis/public/gallery/publisher/dbankier/extension/vscode-instant-markdown/0.1.0/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "vscode-instant-markdown",
+	"displayName": "Instant Markdown",
+	"description": "Instant previews of your markdown files as you type.",
+	"version": "0.1.0",
+	"publisher": "dbankier",
+	"homepage": "https://github.com/dbankier/vscode-instant-markdown/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ziyasal/vscode-instant-markdown.git"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"main": "./extension",
+	"devDependencies": {
+		"vscode": "0.10.x"
+	},
+	"dependencies": {
+		"bluebird": "^3.0.6",
+		"instant-markdown-d": "0.1.0",
+		"request": "^2.67.0",
+		"shelljs": "^0.5.3"
+	}
+}
